@@ -11,15 +11,16 @@ body {
   background-attachment: fixed;
 }
 
-* {
+*{
   box-sizing: border-box;
-  font-family: "Work Sans", sans-serif;
+  font-family: "word Sans, sans-serif";
   margin: 0;
   padding: 0;
 }
 
 html {
   scroll-behavior: smooth;
+
 }
 
 .container-header {
@@ -38,7 +39,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 15px 30px;
 }
 
 
