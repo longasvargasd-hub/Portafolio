@@ -31,8 +31,7 @@ header {
 
 header .logo a {
     color: #00c896;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 20px;
     text-decoration: none;
 }
 
