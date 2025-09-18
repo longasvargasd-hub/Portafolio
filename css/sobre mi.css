@@ -73,7 +73,7 @@ html {
 
 
 .container-header header nav ul li a:hover {
-  color: #1cb698;
+  color: #1a9b81;
 }
 #menu-toogle {
   display: none;
@@ -89,7 +89,7 @@ html {
 
 .inicio {
   height: 100vh;
-  color: #fff;
+  color: #f5f2f2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,7 +100,7 @@ html {
 .sobremi {
   background-size: cover;
   background-position: center;
-  color: white;
+  color: rgb(255, 255, 255);
   padding: 100px 20px;
   text-align: center;
   min-height: 100vh;
