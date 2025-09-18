@@ -18,6 +18,57 @@ body {
   margin: 0;
   padding: 0;
 }
+#menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+    font-size: 28px;
+    cursor: pointer;
+    color: #1cb698; 
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 300;
+  }
+
+  .container-header header .nav ul {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    padding: 10px 0;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    z-index: 250;
+  }
+
+  #menu-toggle:checked ~ .nav ul {
+    display: flex;
+  }
+
+  .container-header header .nav ul li {
+    margin: 5px 0;
+  }
+
+  .container-header header .nav ul li a {
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    text-align: left;
+  }
+}
+
+
 
 html {
   scroll-behavior: smooth;
@@ -187,4 +238,145 @@ footer .redes a:hover {
     background: #1cb698;
     border-color: #1cb698;
     transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .container-header header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-header header ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .container-header header nav ul li {
+    margin: 10px 0;
+  }
+
+  .sobremi {
+    padding: 80px 15px;
+  }
+
+  .sobremi h2 {
+    font-size: 36px;
+  }
+
+  .sobremi .fila {
+    flex-direction: column;
+  }
+
+  .sobremi .fila .col {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .sobremi .fila .col h3 {
+    font-size: 24px;
+  }
+
+  .sobremi .fila .col ul strong {
+    width: auto;
+    text-align: left;
+  }
+
+  .sobremi .fila .col .container-interes {
+    justify-content: center;
+  }
+
+  .sobremi .fila .col .container-interes .interes {
+    width: 80px;
+    height: 80px;
+    font-size: 14px;
+  }
+
+  footer .redes a {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-header header .logo a {
+    font-size: 28px;
+  }
+
+  .sobremi h2 {
+    font-size: 28px;
+  }
+
+  .sobremi .container-section p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .sobremi .fila .col h3 {
+    font-size: 20px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .container-header header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-header header ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .container-header header nav ul li {
+    margin: 10px 0;
+  }
+
+  .skills {
+    padding: 40px 15px;
+  }
+
+  .skills h2 {
+    font-size: 36px;
+  }
+
+  .skills .fila {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .skills .fila .col {
+    padding: 0;
+    min-width: 100%;
+  }
+
+  .skills .fila .col h3 {
+    font-size: 24px;
+  }
+
+  .skills .skills .barra-skills {
+    width: 100%;
+  }
+
+  .skills .skills .barra-skills span {
+    font-size: 12px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    top: -15px;
+    right: -12px;
+  }
+
+  footer .redes a {
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 18px;
+    margin: 8px;
+  }
 }
